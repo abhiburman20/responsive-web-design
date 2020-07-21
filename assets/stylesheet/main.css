@@ -1,0 +1,537 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    font-size: 16px;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========================================================
+CUSTOM LAYOUT
+============================================================= */
+:root {
+    --primary-color: #dfecff;
+    --secondary-color: #f9234d;
+}
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    line-height: 1.5;
+}
+h1, 
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+h4 {
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+p {
+     
+    font-size: 1.2rem;
+    font-weight: 1rem;
+    margin-bottom: 2%;
+}
+.button {
+    background-color: var(--secondary-color);
+    padding: 1% 2%;
+    border-radius: 3%;
+}
+a {
+    text-decoration: none;
+     
+    font: 2rem;
+    color: white;
+}
+.content-1 {
+    padding: 10% 5% 14% 0%;
+}
+.para-small {
+    color: #807f85;
+    font-size: 0.9rem;
+    margin-bottom: 2%;
+}
+/*==========================================================
+ HOME
+ ============================================================*/
+ 
+.home {
+background: url(../images/01.png) rgb(91,61,185);
+background-size: cover;
+background-blend-mode: multiply;
+padding: 2rem;
+color: white;
+}
+header {
+    margin: 1% 4% 5% 4%;
+}
+/* nav {
+    text-align: right;
+} */
+nav a {
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 1rem;
+    margin-right: 1rem;
+     
+}
+ul, li {
+    display: inline-block;
+}
+.join-button {
+    background: var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+
+/* ARTICLE */
+
+.article-2 {
+    margin: 5% 5% 2% 4%;
+    padding-bottom: 3%;
+}
+.imag-1 {
+    max-width: 100%;
+}
+.text {
+    color: var(--secondary-color);
+}
+
+/*==========================================================
+ ABOUT
+============================================================*/
+
+article {
+    margin: 4% 4% 4% 4%;
+}
+.img-2 {
+    margin-right: 5%;
+    max-width: 100%;
+}
+
+/*==========================================================
+ Why You Should Join
+============================================================*/
+
+.join {
+    background-color: var(--primary-color);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.h2-centre {
+    text-align: center;
+    font-size: 2rem;
+}
+.flex {
+display: flex;
+justify-content: space-between;
+}
+.dotted-box {
+border: 2px dashed var(--secondary-color);
+padding: 4rem 2rem 2rem 2rem;
+position: relative;
+}
+.circle-absolute {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    position: absolute;
+    margin: -5.5rem 0 0 1.5rem;
+    color: var(--secondary-color);
+}
+.join-card {
+    position: relative;
+}
+/* .circle-2 {
+    margin: 2% 0% 0% 37%;
+}
+.circle-3 {
+    margin: 2% 0% 0% 67%;
+} */
+
+/*==========================================================
+ Schedule
+============================================================*/
+.Schedule {
+    margin: 4%;
+    text-align: center;
+}
+
+/* CIRCLE-TIMELINE */
+
+ .circle {
+    border: 0.125rem solid var(--secondary-color);
+    border-style: dashed;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 5%;
+    text-align: center;
+    padding: 2.5% 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+    background-color: white;
+    color: var(--secondary-color);
+ }
+.circle-black {
+     background-color: var(--secondary-color);
+     color: white;
+ }
+.vertical {
+    border-left: 0.125rem solid var(--secondary-color);
+    border-style: dashed;
+    height: 10rem;
+    color: var(--secondary-color);
+    margin-left: 50%;
+    margin-top: 35%;
+    position: sticky;
+}
+
+/* ARTICLE-TIMELINE */
+
+
+.article-4 {
+    margin: 0% 2% 0% 2% ;
+}
+.img-article {
+    max-width: 100%;
+    width: 12rem;
+    height: 8rem;
+    border-radius: 5%;
+    margin-right: 4%;
+}
+.article-1 {
+    text-align: start;
+    display: inline-block;
+}
+.flex-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex-Schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Schedule-bttn {
+    font-size: 1.5rem;
+}
+
+/*==========================================================
+ Figures
+============================================================*/
+
+.figures {
+    text-align: center;
+    margin: 5%;
+    padding: 4% 0;
+}
+.icon {
+    max-width: 30%;
+    margin-bottom: 2%;
+}
+/* .icon-1 {
+    max-width: 23%;
+} */
+.item {
+    padding: 4%;
+}
+.item-2,
+.item:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    color: black;
+    border-radius: 5%;
+}
+
+/*==========================================================
+ VIDEO
+============================================================*/
+
+.video-container {
+    margin: 4%;
+    text-align: center;
+}
+.video {
+    background: url(../images/01.png);
+    background-size: cover;
+    border-radius: 2%;
+}
+.video-icon {
+    max-width: 10%;
+    margin: 15%;
+}
+
+/*==========================================================
+Our Latest News
+============================================================*/
+
+.news {
+    padding: 4%;
+}
+.content-7 {
+    padding: 2% 4% 2% 2% ;
+}
+/* .article-7 {
+width: 33%;
+} */
+.img-news {
+    margin: 2%;
+    width: 100%;
+}
+.readmore {
+    text-decoration: underline;
+    color: #586881;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+.readmore-active {
+    color: var(--secondary-color);
+}
+
+/*==========================================================
+Links
+============================================================*/
+
+.links-container {
+    background-color: #23347b;
+    padding: 5%;
+    color: white;
+}
+.nav-footer {
+    text-align: center;
+}
+.link {
+    color: #8b91a7;
+}
+.fab {
+    font-size: 2rem;
+    margin-right: 2%;
+}
+
+/*==========================================================
+FOOTER
+============================================================*/
+
+footer {
+    background-color: #102169;
+    text-align: center;
+    padding: 0.5%;
+}
+.h4-footer {
+    margin-top: 2%;
+    color: #8b91a7;
+}
+.socialmedia {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/*==========================================================
+HAMBURG BUTTON
+============================================================*/
+
+#nav-button,
+label {
+    display: none;
+}
+.toggle:checked ~ .nav {
+    display: inline-block;
+}
+.nav-item:hover,
+.link:hover {
+   color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+.button:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    border: 0.01rem solid var(--secondary-color);
+}
+
+/*==========================================================
+MEDIA SCREEN
+============================================================*/
+
+@media screen and (max-width: 768px) {
+
+    /* BODY */
+
+    html {
+        font-size: 12px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+
+    /* home */
+
+    .imag-1 {
+        max-width: 100%;
+        height: 30rem;
+    }
+
+    /* news */
+
+    .article-7 {
+        width: 100%;
+    }
+    .img-news {
+        width: 90%;
+    }
+
+    /* Schedule */
+
+    .vertical {
+        display: none;
+    } 
+    .circle {
+        height: 4rem;
+        width: 90.5%;
+        padding: 100%;
+        border-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 4.5%;
+        border-radius: 0%;
+        color: white;
+        background-color: transparent;
+    }
+    .circle-color {
+        color: var(--secondary-color);
+    }
+    .img-article {
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+    }
+    .article-1 {
+        background: url(../images/01.png) rgb(91,61,185);
+        color: white;
+        text-align: center;
+        padding: 2%;
+        border-radius: 10% 0%;
+    }
+    .flex-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    /* links-container */
+
+    .h3-footer {
+        text-align: center;
+        margin-top: 5%; 
+    }
+    .footer-follow {
+        text-align: center;
+    }
+    .socialmedia {
+        justify-content: center;
+    }
+    /* HAMBURG BUTTON */
+
+    .nav {
+        display: none;
+        position: absolute;
+        background: rgba(0, 0,0, 0.8); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 0% 0% 100% 0%;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        padding-top: 15rem;
+    }
+    .flex-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-item {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    label {
+        display: inline;
+    }
+    h1,
+    label {
+        z-index: 1;
+    }
+    .fa-bars {
+        font-size: 2rem;
+    }
+    .flex-header {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav:hover {
+        color: rgba(255, 255, 255, 1);
+    box-shadow: none;
+    }
+}
