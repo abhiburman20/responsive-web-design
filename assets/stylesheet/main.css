@@ -282,8 +282,8 @@ position: relative;
 
 .figures {
     text-align: center;
-    margin: 5%;
-    padding: 4% 0;
+    padding: 4% 5%;
+    background-color: var(--primary-color);
 }
 .icon {
     max-width: 30%;
